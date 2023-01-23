@@ -1,0 +1,25 @@
+:root {
+    --primary-text-color: #555555;
+    --title-text-color: #303030;
+    --accent-color: #FF6C00;
+    --main-bg-color: #ffffff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link:hover,
+.link:focus{
+    color: var(--accent-color);
+}
+
+.orange-color {
+    color: var(--accent-color);
+}
+

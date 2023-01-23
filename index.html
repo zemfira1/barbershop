@@ -5,42 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <img src="./images/main_logo.svg" alt="logo" />
-      <ul>
-        <li>
-          <a href="./http://" targer="_blank" rel="noopen norefferer nofollow"
-            >Youtube</a
-          >
-        </li>
-        <li>
-          <a href="./http://" targer="_blank" rel="noopen norefferer nofollow"
-            >Instagram</a
-          >
-        </li>
-      </ul>
-    </header>
-    <header>
+      <!--Навигационные элементы-->
       <nav>
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services and prices</a></li>
-          <li><a href="">Barbers</a></li>
-          <li><a href="">Contacts</a></li>
+        <a href="./index.html" class="link"
+          ><img
+            src="./images/main_logo.svg"
+            alt="logo"
+            width="68.93"
+            height="55.46"
+        /></a>
+        <ul class="list">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Services and prices</a></li>
+          <li><a href="" class="link">Barbers</a></li>
+          <li><a href="" class="link">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
+      <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
       <button type="button">Online-booking</button>
-      <section>
+    </header>
+
+    <main>
+      <div>
+        <ul class="list">
+          <li>
+            <a
+              href="./http://"
+              targer="_blank"
+              rel="noopen norefferer nofollow"
+              class="link"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="./http://"
+              targer="_blank"
+              rel="noopen norefferer nofollow"
+              class="link"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
         <p>A hair salon for men in Kyiv</p>
         <h1>BarberShop</h1>
         <p>
           We are experts in trendy men&#700;s haircuts.<br />
           We work quickly, carefully and with style.
         </p>
-        <ul>
+        <ul class="list">
           <li>
             <p>Back</p>
           </li>
@@ -48,12 +67,10 @@
             <p>Forward</p>
           </li>
         </ul>
-      </section>
-    </header>
+      </div>
 
-    <main>
       <section>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/beard.jpg"
@@ -79,44 +96,81 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button type="button">Online-booking</button>
+        <button type="button" class="link">Online-booking</button>
       </section>
+
       <section>
         <p>Spend your time with the best masters</p>
-
         <h2>Services and prices</h2>
-        <ul>
-          <ul>
-            <li><p>Men&#700;s haircut from 300 uah.</p></li>
-            <li><p>Beard trim from 300 uah.</p></li>
-            <li><p>Mustache trim from 200 uah.</p></li>
-            <li><p>Straight razor shave from 200 uah.</p></li>
-          </ul>
-          <ul>
-            <li><p>Trainee&#700;s haircut from 50 uah.</p></li>
-            <li><p>Haircut under the nozzle from 200 uah.</p></li>
-            <li><p>Children&#700;s haircut (0-12 y.o.) from 300 uah.</p></li>
-            <li><p>Camouflage of gray hair from 200 uah.</p></li>
-          </ul>
+        <table>
+          <tr>
+            <td>Men&#700;s haircut from</td>
+            <td>300 uah.</td>
+          </tr>
+          <tr>
+            <td>Beard trim from</td>
+            <td>300 uah.</td>
+          </tr>
+          <tr>
+            <td>Mustache trim from</td>
+            <td>200 uah.</td>
+          </tr>
+          <tr>
+            <td>Straight razor shave from</td>
+            <td>200 uah.</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Trainee&#700;s haircut from</td>
+            <td>50 uah.</td>
+          </tr>
+          <tr>
+            <td>Haircut under the nozzle from</td>
+            <td>200 uah.</td>
+          </tr>
+          <tr>
+            <td>Children&#700;s haircut (0-12 y.o.)</td>
+            <td>from 300 uah.</td>
+          </tr>
+          <tr>
+            <td>Camouflage of gray hair from</td>
+            <td>200 uah.</td>
+          </tr>
+        </table>
+
+        <!--2 способ списками  <ul class="list">
+          <li><p>Men&#700;s haircut from 300 uah.</p></li>
+          <li><p>Beard trim from 300 uah.</p></li>
+          <li><p>Mustache trim from 200 uah.</p></li>
+          <li><p>Straight razor shave from 200 uah.</p></li>
         </ul>
-        <button type="button">Online-booking</button>
-      </section>
-      <section>
         <ul>
+          <li><p>Trainee&#700;s haircut from 50 uah.</p></li>
+          <li><p>Haircut under the nozzle from 200 uah.</p></li>
+          <li><p>Children&#700;s haircut (0-12 y.o.) from 300 uah.</p></li>
+          <li><p>Camouflage of gray hair from 200 uah.</p></li>
+        </ul> -->
+
+        <button type="button" class="link">Online-booking</button>
+      </section>
+
+      <section>
+        <ul class="list">
           <li>
-            <span>600<sup>+</sup></span>
+            <p>600<sup class="orange-color">+</sup></p>
             <p>Satisfied customers per day</p>
           </li>
           <li>
-            <span>50<sup>+</sup></span>
+            <p>50<sup class="orange-color">+</sup></p>
             <p>Awards for excellent service</p>
           </li>
           <li>
-            <span>20<sup>+</sup></span>
+            <p>20<sup class="orange-color">+</sup></p>
             <p>Kyiv&#700;s best barbers</p>
           </li>
           <li>
-            <span>100<sup>+</sup></span>
+            <p>100<sup class="orange-color">+</sup></p>
             <p>Gifts for regular customers</p>
           </li>
         </ul>
@@ -127,35 +181,38 @@
           time than read 10 times.
         </p>
       </section>
+
       <section>
         <p>For true enjoyers of the atmosphere</p>
         <h2>Our barbers</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
-              src="./images/John_Smith.jpg"
+              src="./images/barbers/John_Smith.jpg"
               alt="John Smith"
               width="370"
               height="346"
             />
             <h3>John Smith</h3>
-            <p>Extreme Barber</p>
+            <p class="orange-color">Extreme Barber</p>
             <ul>
               <li>
-                <a href=""
+                <a href="" class="link"
                   ><img src="./images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
               <li>
-                <a href=""><img src="./images/twitter.svg" alt="Twitter" /></a>
+                <a href="" class="link"
+                  ><img src="./images/twitter.svg" alt="Twitter"
+                /></a>
               </li>
               <li>
-                <a href=""
+                <a href="" class="link"
                   ><img src="./images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
-                <a href=""
+                <a href="" class="link"
                   ><img src="./images/linkedin.svg" alt="Linkedin"
                 /></a>
               </li>
@@ -163,82 +220,85 @@
           </li>
           <li>
             <img
-              src="./images/Michele_Doe.jpg"
+              src="./images/barbers/Michele_Doe.jpg"
               alt="Michele Doe"
               width="370"
               height="346"
             />
             <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <p class="orange-color">Extreme Barber</p>
             <ul>
               <li>
                 <a href=""
-                  ><img src="./images/instagram.svg" alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twitter.svg" alt="Twitter" /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="./images/facebook.svg" alt="Facebook"
+                  ><img
+                    src="./images/instagram.svg"
+                    alt="Instagram"
+                    class="link"
                 /></a>
               </li>
               <li>
                 <a href=""
-                  ><img src="./images/linkedin.svg" alt="Linkedin"
+                  ><img src="./images/twitter.svg" alt="Twitter" class="link"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/facebook.svg" alt="Facebook" class="link"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/linkedin.svg" alt="Linkedin" class="link"
                 /></a>
               </li>
             </ul>
           </li>
           <li>
             <img
-              src="./images/Alan_Black.jpg"
+              src="./images/barbers/Alan_Black.jpg"
               alt="Alan Black"
               width="370"
               height="346"
             />
             <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <p class="orange-color">Extreme Barber</p>
             <ul>
               <li>
                 <a href=""
-                  ><img src="./images/instagram.svg" alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="./images/twitter.svg" alt="Twitter" /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="./images/facebook.svg" alt="Facebook"
+                  ><img
+                    src="./images/instagram.svg"
+                    alt="Instagram"
+                    class="link"
                 /></a>
               </li>
               <li>
                 <a href=""
-                  ><img src="./images/linkedin.svg" alt="Linkedin"
+                  ><img src="./images/twitter.svg" alt="Twitter" class="link"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/facebook.svg" alt="Facebook" class="link"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/linkedin.svg" alt="Linkedin" class="link"
                 /></a>
               </li>
             </ul>
           </li>
         </ul>
       </section>
+
       <section>
         <p>In Latin, "barba" means "beard"</p>
         <h2>rectangle</h2>
         <!--Этот заголовок скроем-->
-        <ul>
+        <ul class="list">
           <li>
             <img
-              src="./images/rectangle25.jpg"
-              alt="25"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/rectangle26.jpg"
+              src="./images/rectangles/rectangle1.jpg"
               alt="26"
               width="270"
               height="360"
@@ -246,7 +306,7 @@
           </li>
           <li>
             <img
-              src="./images/rectangle27.jpg"
+              src="./images/rectangles/rectangle2.jpg"
               alt="27"
               width="270"
               height="360"
@@ -254,7 +314,15 @@
           </li>
           <li>
             <img
-              src="./images/rectangle28.jpg"
+              src="./images/rectangles/rectangle3.jpg"
+              alt="28"
+              width="270"
+              height="360"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/rectangles/rectangle4.jpg"
               alt="28"
               width="270"
               height="360"
@@ -262,30 +330,61 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer>
+
       <section>
         <h2>Online-booking</h2>
       </section>
+
       <section>
         <h2>Contacts</h2>
         <address>
-          <a href="" target="_blank" rel="noopener noreferrer nofollow"></a>
-          <!--гугл карты-->
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="list">
+            <li>
+              <a
+                href="https://goo.gl/maps/rLNktVn6i2Pzdkuv8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link"
+                >st. Vasilkivska, 7A Kyiv, 08132</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380441111111" class="link">+38 044 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:barbershop@email.com" class="link"
+                >barbershop@email.com</a
+              >
+            </li>
           </ul>
         </address>
+        <h3>Working hours</h3>
+        <p>Every day from 9:00 to 22:00</p>
       </section>
-      <section>
-        <p></p>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright 2020</p>
+      <ul class="list">
+        <li>
+          <a
+            href="./http://"
+            targer="_blank"
+            rel="noopen norefferer nofollow"
+            class="link"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a
+            href="./http://"
+            targer="_blank"
+            rel="noopen norefferer nofollow"
+            class="link"
+            >Youtube</a
+          >
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
