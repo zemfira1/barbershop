@@ -6,36 +6,310 @@
     --primary-bg-color: #ffffff;
     --second-bg-color: #F7F7F7;
     --contacts-bg-color:#191C26;
+    --hero-text-color:#9DA4BD;
 }
-
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
-
 .list {
     list-style: none;
 }
-
 .link{
     text-decoration: none;
 }
-
 .link:hover,
-.link:focus{
+.link:focus,
+.logo:hover,
+.logo:focus{
     color: var(--accent-color);
 }
 
-.speciality-color {
-    color: var(--accent-color);
-}
 .contacts-item-link{
     font-style: normal;
 }
 
+                 /*header*/
+.header{
+    background-color: var(--primary-text-color); /*временно*/
+}
+.header-nav-link{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+.header-nav-tel{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+.button{
+    font-family: inherit;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+.button:hover,
+.button:focus{
+    color: var(--accent-color);
+}
+
+            /*sidebar*/
+.sidebar-item-link{
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+}
+.sidebar-item-link:hover,
+.sidebar-item-link:focus{
+    color: var(--accent-color);
+}
 
 
+            /*hero*/
+.hero{
+    background-color: var(--primary-text-color);
+}
+.hero-pre-title{
+    color: rgba(157, 164, 189, 0.6);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.hero-title{
+    color: var(--white-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+.hero-after-title{
+    color: var(--hero-text-color);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+.hero-item-back{
+    color: rgba(157, 164, 189, 0.6);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
 
+}
+.hero-item-forward{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: right;
+    letter-spacing: 0.1em;
+}
+
+
+            /*about*/
+.about-pre-title {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.about-title {
+    color: var(--second-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.about-subtitle {
+    color:var(--primary-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.about-text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+
+
+            /*price*/
+.price {
+    background-color: var(--primary-text-color);
+}
+
+.price-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.price-title {
+    color: var(--white-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.table-service,
+.table-price {
+    color: var(--hero-text-color);
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+
+
+        /*progress*/
+.progress-item-number {
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.progress-item-text {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+}
+.progress-pre-title {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.progress-title {
+    color: var(--second-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.progress-title-text {
+    color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+
+            /*barbers*/
+.barbers {
+    background-color: var(--second-bg-color);
+}
+.barbers-pre-title {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+}
+.barbers-title {
+    color: var(--second-text-color);
+    font-family: 'Raleway',sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.barbers-name {
+    color: var(--second-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+}
+.barbers-speciality {
+    color: var(--accent-color);
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+
+        /*workphoto*/
+.workphoto-pre-title {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+
+        /*contacts*/
+.contacts {background-color: var(--primary-text-color);}
+.contacts-title {
+    color: var(--white-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.contacts-item-link {
+    color: var(--hero-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+}
+.contacts-subtitle {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+.contacts-subtitle-text {
+    color: var(--hero-text-color);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+
+            /*footer*/
+.footer {
+    background-color: var(--second-bg-color);
+}
+.footer-copyright {
+    color: var(--hero-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+}
+.footer-link {
+    color: var(--second-text-color);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    letter-spacing: 0.2em;
+}
 
 
 .hidden {
