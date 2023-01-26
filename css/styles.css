@@ -1,12 +1,15 @@
 :root {
     --primary-text-color: #555555;
-    --title-text-color: #303030;
+    --second-text-color: #303030;
+    --white-color:#ffffff;
     --accent-color: #FF6C00;
-    --main-bg-color: #ffffff;
+    --primary-bg-color: #ffffff;
+    --second-bg-color: #F7F7F7;
+    --contacts-bg-color:#191C26;
 }
 
 body {
-    background-color: var(--main-bg-color);
+    background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }
 
@@ -14,14 +17,26 @@ body {
     list-style: none;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .link:hover,
 .link:focus{
     color: var(--accent-color);
 }
 
-.orange-color {
+.speciality-color {
     color: var(--accent-color);
 }
+.contacts-item-link{
+    font-style: normal;
+}
+
+
+
+
+
 
 .hidden {
     position: absolute;
