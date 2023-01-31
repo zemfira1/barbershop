@@ -16,11 +16,35 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,       /*сбросили автоматические марджины*/
+h5,
+h6,
+table
+{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
+
 .list {
-    list-style: none;
+    list-style: none;  /*убрали маркировку списков*/
 }
 .link{
-    text-decoration: none;
+    text-decoration: none;  /*убрали подчеркивание ссылок*/
+    display: inline-block;  /*сделали ссылки блочно-строчными */
 }
 .link:hover,
 .link:focus,
@@ -30,11 +54,13 @@ body {
 }
 
 .contacts-item-link{
-    font-style: normal;
+    font-style: normal;  /*внутри адреса сняли автоматический курсив*/
 }
 
                  /*header*/
 .header{
+    padding-top: 32px;
+    padding-bottom: 32px;
     background-color: var(--primary-text-color); /*временно*/
 }
 .header-nav-link{
@@ -52,22 +78,32 @@ body {
 
 }
 .button{
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent; /*прозрачный фон*/
+    padding: 12px 20px;
     font-family: inherit;
     color: var(--white-color);
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .about-button{
     color: var(--second-text-color);
 }
 .button:hover,
 .button:focus{
-    color: var(--accent-color);
+    color: var(--white-color);
+    background-color: var(--accent-color);
 }
 
             /*sidebar*/
+.sidebar{
+    padding-top: 27px;
+    padding-bottom: 58px;
+}
 .sidebar-item-link{
     color: var(--second-text-color);
     font-weight: 600;
@@ -83,9 +119,12 @@ body {
 
             /*hero*/
 .hero{
+    padding-top: 184px;
+    padding-bottom: 40px;
     background-color: var(--primary-text-color);
 }
 .hero-pre-title{
+    margin-bottom: 20px;
     color: var(--color-with-transparency);
     font-weight: 600;
     font-size: 11px;
@@ -93,6 +132,7 @@ body {
     text-transform: uppercase;
 }
 .hero-title{
+    margin-bottom: 20px;
     color: var(--white-color);
     font-family: 'Raleway', sans-serif;
     font-size: 72px;
@@ -100,6 +140,7 @@ body {
     letter-spacing: 0.05em;
 }
 .hero-after-title{
+    margin-bottom: 144px;
     color: var(--hero-text-color);
     font-size: 18px;
     line-height: 1.67;
@@ -124,7 +165,12 @@ body {
 
 
             /*about*/
+.about{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .about-pre-title {
+    margin-bottom: 20px;
     color: var(--second-text-color);
     font-weight: 600;
     font-size: 11px;
@@ -132,6 +178,7 @@ body {
     text-transform: uppercase;
 }
 .about-title {
+    margin-bottom: 20px;
     color: var(--second-text-color);
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
@@ -139,6 +186,7 @@ body {
     letter-spacing: 0.05em;
 }
 .about-subtitle {
+    margin-bottom: 20px;
     color:var(--primary-text-color);
     font-weight: 400;
     font-size: 18px;
@@ -146,6 +194,7 @@ body {
     letter-spacing: 0.02em;
 }
 .about-text {
+    margin-bottom: 42px;
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.86;
@@ -155,10 +204,13 @@ body {
 
             /*price*/
 .price {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--primary-text-color);
 }
 
 .price-pre-title {
+    margin-bottom: 20px;
     color: var(--color-with-transparency);
     font-weight: 600;
     font-size: 11px;
@@ -166,22 +218,52 @@ body {
     text-transform: uppercase;
 }
 .price-title {
+    margin-bottom: 44px;
     color: var(--white-color);
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
 }
+/*.table-one{}
+.table-two{}*/
+
 .table-service,
 .table-price {
+    padding: 0;
     color: var(--hero-text-color);
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 }
+.price-table{
+    margin-bottom: 44px;
+    width: 570px;
+    height: 240px;
+    padding: 30px 22px 30px 20px;
+
+    border: 1px solid #4d1b02;
+}
+/*.table-line:nth-last-child(n+2){
+    padding-bottom: 20px;
+}*/
+
 
 
         /*progress*/
+.progress{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.progress-item{
+    display: block;
+    width: 170px;
+    height: 133px;
+    text-align: center;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    background-color: var(--second-bg-color);
+}
 .progress-item-number {
     color: var(--second-text-color);
     font-weight: 700;
@@ -198,6 +280,7 @@ body {
     text-align: center;
 }
 .progress-pre-title {
+    margin-bottom: 20px;
     color: var(--second-text-color);
     font-weight: 600;
     font-size: 11px;
@@ -205,6 +288,7 @@ body {
     text-transform: uppercase;
 }
 .progress-title {
+    margin-bottom: 20px;
     color: var(--second-text-color);
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
@@ -217,19 +301,26 @@ body {
     line-height: 1.67;
     letter-spacing: 0.02em;
 }
+.orange-color{
+    color: var(--accent-color);
+}
 
 
             /*barbers*/
 .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--second-bg-color);
 }
 .barbers-pre-title {
+    margin-bottom: 20px;
     color: var(--second-text-color);
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
 }
 .barbers-title {
+    margin-bottom: 44px;
     color: var(--second-text-color);
     font-family: 'Raleway',sans-serif;
     font-size: 42px;
@@ -253,7 +344,12 @@ body {
 
 
         /*workphoto*/
+.workphoto{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .workphoto-pre-title {
+    margin-bottom: 44px;
     color: var(--second-text-color);
     font-weight: 600;
     font-size: 11px;
@@ -262,14 +358,33 @@ body {
 }
 
 
+        /*online-booking*/
+.online-booking{
+    padding-top: 130px;
+    padding-bottom: 183px;
+}
+
         /*contacts*/
-.contacts {background-color: var(--primary-text-color);}
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    background-color: var(--primary-text-color);}
 .contacts-title {
+    margin-bottom: 40px;
     color: var(--white-color);
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
+}
+.contacts-address{
+    width: 270px;
+    height: 160px;
+    padding: 0;
+    margin-bottom: 70px;
+}
+.contacts-item:nth-last-child(n+2){
+    margin-bottom: 20px;
 }
 .contacts-item-link {
     color: var(--hero-text-color);
@@ -279,6 +394,7 @@ body {
     letter-spacing: 0.02em;
 }
 .contacts-subtitle {
+    margin-bottom: 20px;
     color: var(--white-color);
     font-weight: 600;
     font-size: 11px;
@@ -295,6 +411,8 @@ body {
 
             /*footer*/
 .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
     background-color: var(--second-bg-color);
 }
 .footer-copyright {
@@ -308,13 +426,23 @@ body {
     color: var(--second-text-color);
     font-weight: 600;
     font-size: 11px;
-    line-height: 1.36px;
+    line-height: 1.36;
     letter-spacing: 0.2em;
+}
+
+.container {    /*ставятся внутри секции*/
+    width: 100%;  /*использовать 100% ширины*/
+    max-width: 1200px; /*максимальная ширина*/
+    padding-left: 15px; /*паддинги включены в ширину*/
+    padding-right: 15px;
+    margin: 0 auto;
+
+    outline: 1px solid #f0824c; /*временная рамка для наглядности*/
 }
 
 
 .hidden {
-    position: absolute;
+    position: absolute;   /*скрыли элемент*/
     width: 1px;
     height: 1px;
     margin: -1px;

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../REZUME PROGECT"
+	},
+	{
+		"path": "../goit-markup-hw-02"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "barbershop"
+  }
+}
