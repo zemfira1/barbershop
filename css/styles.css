@@ -36,8 +36,23 @@ ul{
 
 img{
     display: block;
+    padding: 0;
+    margin: 0;
 }
+.container {
+    /*ставятся внутри секции*/
+    width: 100%;
+    /*использовать 100% ширины*/
+    max-width: 1200px;
+    /*максимальная ширина*/
+    padding-left: 15px;
+    /*паддинги включены в ширину*/
+    padding-right: 15px;
+    margin: 0 auto;
 
+    outline: 1px solid #f0824c;
+    /*временная рамка для наглядности*/
+}
 
 .list {
     list-style: none;  /*убрали маркировку списков*/
@@ -63,6 +78,22 @@ img{
     padding-bottom: 32px;
     background-color: var(--primary-text-color); /*временно*/
 }
+.header-cont{
+    display: flex;
+    align-items: center;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+.header-nav-logo-link{
+    margin-right: 132px;
+}
+.header-nav-list{
+    display: flex;
+    gap: 30px;
+}
 .header-nav-link{
     color: var(--white-color);
     font-weight: 600;
@@ -70,6 +101,7 @@ img{
     letter-spacing: 0.1em;
 }
 .header-nav-tel{
+    margin-right: 43px;
     color: var(--white-color);
     font-weight: 600;
     line-height: 1.33;
@@ -78,12 +110,14 @@ img{
 
 }
 .button{
+    min-width: 160px;/*кнопка расширится вширину, если контента много, 
+    не в высоту. но минимум своей ширины будет держать*/
+    height: 40px;
+    color: var(--white-color);
     border: 1px solid var(--accent-color);
     border-radius: 25px;
     background-color: transparent; /*прозрачный фон*/
-    padding: 12px 20px;
     font-family: inherit;
-    color: var(--white-color);
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: 0.09em;
@@ -101,8 +135,13 @@ img{
 
             /*sidebar*/
 .sidebar{
+    width: 100px;
     padding-top: 27px;
     padding-bottom: 58px;
+}
+.sidebar-list{
+    display: flex;
+
 }
 .sidebar-item-link{
     color: var(--second-text-color);
@@ -118,10 +157,18 @@ img{
 
 
             /*hero*/
-.hero{
+/*.hero{
     padding-top: 184px;
     padding-bottom: 40px;
-    background-color: var(--primary-text-color);
+}*/
+.hero-cont{
+    display: flex;
+}
+.hero-main{
+    padding: 272px 100px 208px;
+    background-color: #9dcc26; 
+    flex-grow: 1; /*растягивает контент на 1 часть. 
+    в нашем случае ширина левого соседа фиксированная*/
 }
 .hero-pre-title{
     margin-bottom: 20px;
@@ -141,10 +188,16 @@ img{
 }
 .hero-after-title{
     margin-bottom: 144px;
+    max-width: 360px;
     color: var(--hero-text-color);
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+}
+.hero-list{
+    display: flex;
+    gap: 24px;
+    flex-direction: row-reverse;
 }
 .hero-item-back{
     color: var(--color-with-transparency);
@@ -168,6 +221,17 @@ img{
 .about{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.about-cont{
+    display: flex;
+    gap: 30px;
+}
+.about-list{
+    display: flex;
+    gap: 30px;
+}
+.about-main{
+    max-width: 470px;
 }
 .about-pre-title {
     margin-bottom: 20px;
@@ -225,9 +289,11 @@ img{
     line-height: 1.17;
     letter-spacing: 0.05em;
 }
-/*.table-one{}
-.table-two{}*/
-
+.price-main{
+    display: flex;
+    gap: 30px;
+    
+}
 .table-service,
 .table-price {
     padding: 0;
@@ -238,15 +304,16 @@ img{
 }
 .price-table{
     margin-bottom: 44px;
-    width: 570px;
+    width: calc((100%-30px)/2);
     height: 240px;
     padding: 30px 22px 30px 20px;
 
     border: 1px solid #4d1b02;
 }
-/*.table-line:nth-last-child(n+2){
-    padding-bottom: 20px;
-}*/
+.button-price{
+    display: block;
+    margin: 0 auto;
+}
 
 
 
@@ -254,6 +321,10 @@ img{
 .progress{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.progress-cont{
+    display: flex;
+    gap: 130px;
 }
 .progress-item{
     display: block;
@@ -279,6 +350,9 @@ img{
     line-height: 1.36;
     text-align: center;
 }
+.progress-main{
+    max-width: 500px;
+}
 .progress-pre-title {
     margin-bottom: 20px;
     color: var(--second-text-color);
@@ -288,6 +362,7 @@ img{
     text-transform: uppercase;
 }
 .progress-title {
+    max-width: 430px;
     margin-bottom: 20px;
     color: var(--second-text-color);
     font-family: 'Raleway', sans-serif;
@@ -327,7 +402,18 @@ img{
     line-height: 1.17;
     letter-spacing: 0.05em;
 }
+.barbers-list{
+    display: flex;
+    gap: 30px;
+}
+.barbers-item{
+    width: calc((100%-60px)/3);
+}
+.barbers-item-main{
+    padding: 30px 0;
+}
 .barbers-name {
+    margin-bottom: 8px;
     color: var(--second-text-color);
     font-weight: 400;
     font-size: 18px;
@@ -356,12 +442,22 @@ img{
     line-height: 1.36;
     text-transform: uppercase;
 }
+.workphoto-list {
+    display: flex;
+    gap: 30px;
+}
+.workphoto-item{
+    width: calc((100%-90px)/4);
+}
+
 
 
         /*online-booking*/
 .online-booking{
     padding-top: 130px;
     padding-bottom: 183px;
+    
+    background-color: #deac93;
 }
 
         /*contacts*/
@@ -369,6 +465,9 @@ img{
     padding-top: 130px;
     padding-bottom: 120px;
     background-color: var(--primary-text-color);}
+.contacts-cont{
+    padding-left: 100px;
+}
 .contacts-title {
     margin-bottom: 40px;
     color: var(--white-color);
@@ -415,12 +514,20 @@ img{
     padding-bottom: 56px;
     background-color: var(--second-bg-color);
 }
+.footer-cont{
+    display: flex;
+    justify-content: space-between ;
+}
 .footer-copyright {
     color: var(--hero-text-color);
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.2em;
+}
+.footer-list{
+    display: flex;
+    gap: 40px;
 }
 .footer-link {
     color: var(--second-text-color);
@@ -430,15 +537,7 @@ img{
     letter-spacing: 0.2em;
 }
 
-.container {    /*ставятся внутри секции*/
-    width: 100%;  /*использовать 100% ширины*/
-    max-width: 1200px; /*максимальная ширина*/
-    padding-left: 15px; /*паддинги включены в ширину*/
-    padding-right: 15px;
-    margin: 0 auto;
 
-    outline: 1px solid #f0824c; /*временная рамка для наглядности*/
-}
 
 
 .hidden {
